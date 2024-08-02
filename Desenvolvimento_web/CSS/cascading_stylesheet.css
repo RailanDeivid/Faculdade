@@ -1,0 +1,14 @@
+*{
+    text-align: left;
+    color: blue;
+}
+h2{
+    text-align: justify;
+    color: rgb(172, 9, 9);
+}
+#p{
+    color: aqua;
+}
+p{
+    color:rgb(0, 0, 255);
+}
