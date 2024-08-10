@@ -1,4 +1,85 @@
+
+/* Ajuste para telas menores que 768px (tablets e dispositivos móveis) */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .quemsoueu {
+        flex-direction: column; /* Alinha a imagem e o texto verticalmente */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .quemsoueu img {
+        max-width: 100%; /* Ajusta a imagem ao tamanho do contêiner */
+        margin-bottom: 20px;
+    }
+
+    .quemsoueu p {
+        font-size: 24px; /* Reduz o tamanho do texto */
+    }
+
+    .formacao {
+        font-size: 16px; /* Ajusta o tamanho do texto */
+    }
+
+    .portfolio-container {
+        flex-direction: column; /* Alinha os itens verticalmente */
+        margin: 20px;
+    }
+
+    .projetos-container {
+        max-width: 100%; /* Ajusta o tamanho ao contêiner pai */
+        flex-direction: column; /* Alinha a imagem e detalhes verticalmente */
+    }
+
+    .projetos-imagem {
+        max-width: 100%; /* Ajusta a imagem ao tamanho do contêiner */
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+/* Ajuste para telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+    body {
+        font-size: 16px; /* Ajusta o tamanho da fonte */
+    }
+
+    h2 {
+        font-size: 36px; /* Reduz o tamanho do cabeçalho */
+    }
+
+    .nav {
+        flex-direction: column; /* Alinha os itens da navegação verticalmente */
+        font-size: 18px; /* Ajusta o tamanho da fonte da navegação */
+        gap: 15px;
+    }
+
+    .nav > li > a::before {
+        height: 2px; /* Ajusta a altura da linha de destaque */
+    }
+
+    form {
+        padding: 30px; /* Ajusta o preenchimento do formulário */
+    }
+
+    form input, form textarea {
+        font-size: 16px; /* Ajusta o tamanho da fonte dos campos do formulário */
+    }
+
+    form button {
+        font-size: 16px; /* Ajusta o tamanho da fonte do botão */
+    }
+}
+
+.quemsoueu img, .projetos-imagem {
+    width: 100%; /* Faz com que a imagem se ajuste ao tamanho do contêiner */
+    height: auto;
+}
+
 /* Define o estilo básico para todo o site */
+
 body {
     font-family: Arial, sans-serif;
     font-size: 18px;
@@ -172,7 +253,7 @@ form {
     align-items: center;
     background-color: #1a2027; /* Azul escuro */
     padding: 50px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 form input, form textarea {
