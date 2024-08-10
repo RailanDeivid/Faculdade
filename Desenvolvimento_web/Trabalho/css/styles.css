@@ -1,0 +1,127 @@
+/* Define o estilo básico para todo o site */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff; /* Cor do texto em branco */
+    background-color: #000; /* Cor de fundo preta */
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff; /* Cor do texto do cabeçalho */
+    font-size: 45px;
+}
+
+
+/* Estilo do menu de navegação */
+nav {
+    background-color: #003366; /* Azul escuro */
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff; /* Cor do texto dos links */
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+    font-weight: bold; /* Fonte em negrito */
+    }
+
+/* ------------------------------------------------------------------- */
+/* Estilo da página "Quem sou eu?" */
+
+.quemsoueu {
+    padding: 20px;
+    margin: 5%;
+}
+
+.quemsoueu {
+    display: flex; /* Usar flexbox para layout */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    gap: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+.quemsoueu img {
+    border-radius: 50%; /* Deixa a imagem circular */
+    max-width: 400px; /* Define um tamanho máximo para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.quemsoueu p {
+    max-width: auto; /* Define uma largura máxima para o texto */
+    text-align: left; /* Ajusta o texto a esquerda da imagem */
+    font-size: 45px; /* Ajusta o tamanho do texto */
+    font-weight: bold; /* Fonte em negrito */
+}
+/* ------------------------------------------------------------------------------- */
+/* Estilo da página "Formação" */
+.formacao {
+    max-width: auto; /* Define uma largura máxima para o texto */
+    text-align: center; /* Ajusta o texto a esquerda da imagem */
+    font-size: 20px; /* Ajusta o tamanho do texto */
+
+}
+
+/* Estilo da lista */
+ul{
+    max-width: auto; /* Define uma largura máxima para o texto */
+    text-align: left; /* Ajusta o texto a esquerda da imagem */
+    font-size: 20px;  
+    margin-bottom: 10px; /* Espaço entre itens da lista */
+}
+
+ul li a {
+    color: rgb(42, 104, 240); /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    
+}
+
+ul li a:hover {
+    color: darkblue; /* Cor do link ao passar o mouse */
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
+
+ul li a:visited {
+    color: purple; /* Cor do link após ter sido visitado */
+}
+
+
+
+
+
+
+
+
+/* Estilo para o formulário de contato */
+form {
+    background-color: #003366; /* Azul escuro */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #0056b3; /* Azul mais claro */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #003d80; /* Azul ainda mais escuro no hover */
+}
+
