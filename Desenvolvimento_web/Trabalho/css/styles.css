@@ -1,10 +1,11 @@
 /* Define o estilo básico para todo o site */
 body {
     font-family: Arial, sans-serif;
-    color: #fff; /* Cor do texto em branco */
-    background-color: #000; /* Cor de fundo preta */
+    font-size: 18px;
     margin: 0;
-    padding: 0;
+    color: #ffffff; /* Cor do texto em branco */
+    background-color: #12161f; /* Cor de fundo preta */
+
 }
 
 h2 {
@@ -13,30 +14,103 @@ h2 {
     font-size: 45px;
 }
 
-
-/* Estilo do menu de navegação */
+  
+ul {
+    list-style: none;
+}
+  
 nav {
-    background-color: #003366; /* Azul escuro */
+    color: #ffffff; 
+    background-color: #1a2027;
+    border-radius: 10px; 
+    margin: 10px auto;
+    width: fit-content; 
+    padding: 10px 20px;
+    opacity: 60%;
+    transition-duration: 0.7s;
+}
+  
+  
+.nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 70px;
+    font-size: 25px;
+    font-weight: bold; 
+    gap: 30px;
+
+}
+
+
+.nav > li:hover > a {
+    color: #3e95ff;
+    text-decoration: none;
+}
+
+  
+.nav > li:hover > a::before {
+        visibility: visible;
+        scale: 1 1;
+
+}
+  
+
+.nav > li a {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 7px;
+    text-decoration: none;
+    position: relative;
+    height: 100%;
+}
+  
+.nav > li > a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 3px;
+    left: 0px;
+    background-color: #3e95ff;
+    transition: all 0.2s ease-in-out;
+    scale: 0 0;
+    visibility: hidden;
+    
+}
+
+
+
+/* Estilo do nav de navegação */
+/* nav {
+    background-color: #003366; 
     padding: 20px;
     text-align: center;
+    transition-duration: 0.7s;
+    border-bottom: 3px solid rgb(255, 255, 255);
 }
 
 nav a {
-    color: #fff; /* Cor do texto dos links */
+    color: #fff; 
     margin: 0 15px;
     text-decoration: none;
 }
 
 a:hover {
     color: rgb(0, 0, 0);
-    font-weight: bold; /* Fonte em negrito */
-    }
+    font-weight: bold; 
+    } */
 
 /* ------------------------------------------------------------------- */
+
 /* Estilo da página "Quem sou eu?" */
 
 .quemsoueu {
-    padding: 20px;
+    padding: 15px;
     margin: 5%;
 }
 
@@ -55,7 +129,7 @@ a:hover {
 .quemsoueu p {
     max-width: auto; /* Define uma largura máxima para o texto */
     text-align: left; /* Ajusta o texto a esquerda da imagem */
-    font-size: 45px; /* Ajusta o tamanho do texto */
+    font-size: 40px; /* Ajusta o tamanho do texto */
     font-weight: bold; /* Fonte em negrito */
 }
 /* ------------------------------------------------------------------------------- */
@@ -69,10 +143,14 @@ a:hover {
 
 /* Estilo da lista */
 ul{
-    max-width: auto; /* Define uma largura máxima para o texto */
-    text-align: left; /* Ajusta o texto a esquerda da imagem */
-    font-size: 20px;  
+    text-align: center; /* Ajusta o texto a esquerda da imagem */ 
     margin-bottom: 10px; /* Espaço entre itens da lista */
+    background-color: #1a2027;
+    border-radius: 3px; 
+    margin: 10px auto;
+    width: fit-content; 
+    padding: 10px 20px;
+
 }
 
 ul li a {
@@ -82,26 +160,19 @@ ul li a {
 }
 
 ul li a:hover {
-    color: darkblue; /* Cor do link ao passar o mouse */
+    color: rgb(42, 104, 240); /* Cor do link ao passar o mouse */
     text-decoration: underline; /* Sublinha o link ao passar o mouse */
 }
-
-ul li a:visited {
-    color: purple; /* Cor do link após ter sido visitado */
-}
-
-
-
-
-
 
 
 
 /* Estilo para o formulário de contato */
 form {
-    background-color: #003366; /* Azul escuro */
-    padding: 20px;
-    border-radius: 5px;
+    margin: 5%;
+    align-items: center;
+    background-color: #1a2027; /* Azul escuro */
+    padding: 50px;
+    border-radius: 10px;
 }
 
 form input, form textarea {
@@ -113,15 +184,89 @@ form input, form textarea {
 }
 
 form button {
-    background-color: #0056b3; /* Azul mais claro */
-    color: #fff; /* Cor do texto do botão */
+    background-color: #ffffff; /* Azul mais claro */
+    color: #12161f; /* Cor do texto do botão */
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold; /* Fonte em negrito */
 }
 
 form button:hover {
-    background-color: #003d80; /* Azul ainda mais escuro no hover */
+    background-color: #12161f; /* Azul ainda mais escuro no hover */
+    color: #ffffff;
 }
 
+/* ------------------------------------------------------------------------------- */
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    max-width: 12000px; 
+    margin: 50px;
+}
+
+.projetos-container {
+    background-color: #1a2027;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin-bottom: 20px;
+    max-width: 70%;
+    padding: 15px;
+
+
+}
+
+
+.projetos-imagem {
+    border-radius: 8px;
+    max-width: 400px;
+    margin-right: 20px;
+}
+
+.projetos-detalhes {
+    flex-grow: 1;
+}
+
+.projetos-detalhes h2 {
+    margin-top: 0;
+}
+
+.projetos-detalhes p {
+    margin: 10px 0;
+}
+
+
+.tech-logos {
+    display: flex;
+    justify-content: center; /* Alinha os itens horizontalmente no centro */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+}
+
+.tech-logos img {
+    height: 30px;
+    margin-right: 10px;
+
+}
+
+.projeto-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.projeto-links a {
+    background-color: #ffffff; 
+    color: #12161f;
+    border-radius: 3px;
+    margin-right: 10px;
+    padding: 5px 12px;
+    text-decoration: none;
+}
+
+.projeto-links a:hover {
+    background-color: #12161f; 
+    color: #ffffff;
+}
