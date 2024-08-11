@@ -1,40 +1,47 @@
-
 /* Ajuste para telas menores que 768px (tablets e dispositivos móveis) */
 @media (max-width: 768px) {
+    /* Ajusta o preenchimento interno da classe container */
     .container {
         padding: 10px;
     }
 
+    /* Alinha a imagem e o texto verticalmente na seção "Quem sou eu?" */
     .quemsoueu {
-        flex-direction: column; /* Alinha a imagem e o texto verticalmente */
+        flex-direction: column;
         text-align: center; /* Centraliza o texto */
     }
 
+    /* Define a largura máxima da imagem e espaçamento inferior na seção "Quem sou eu?" */
     .quemsoueu img {
-        max-width: 100%; /* Ajusta a imagem ao tamanho do contêiner */
+        max-width: 100%; 
         margin-bottom: 20px;
     }
 
+    /* Reduz o tamanho do texto na seção "Quem sou eu?" */
     .quemsoueu p {
-        font-size: 24px; /* Reduz o tamanho do texto */
+        font-size: 24px;
     }
 
+    /* Ajusta o tamanho do texto na seção "Formação" */
     .formacao {
-        font-size: 16px; /* Ajusta o tamanho do texto */
+        font-size: 16px;
     }
 
+    /* Alinha os itens do portfólio verticalmente e ajusta o espaçamento */
     .portfolio-container {
-        flex-direction: column; /* Alinha os itens verticalmente */
+        flex-direction: column; 
         margin: 20px;
     }
 
+    /* Ajusta a largura e a direção do layout na seção "Projetos" */
     .projetos-container {
-        max-width: 100%; /* Ajusta o tamanho ao contêiner pai */
-        flex-direction: column; /* Alinha a imagem e detalhes verticalmente */
+        max-width: 100%; 
+        flex-direction: column; 
     }
 
+    /* Ajusta o tamanho da imagem na seção "Projetos" e o espaçamento */
     .projetos-imagem {
-        max-width: 100%; /* Ajusta a imagem ao tamanho do contêiner */
+        max-width: 100%;
         margin-right: 0;
         margin-bottom: 15px;
     }
@@ -42,76 +49,84 @@
 
 /* Ajuste para telas menores que 480px (smartphones) */
 @media (max-width: 480px) {
+    /* Ajusta o tamanho da fonte do corpo do texto */
     body {
-        font-size: 16px; /* Ajusta o tamanho da fonte */
+        font-size: 16px;
     }
 
+    /* Reduz o tamanho dos cabeçalhos */
     h2 {
-        font-size: 36px; /* Reduz o tamanho do cabeçalho */
+        font-size: 36px;
     }
 
+    /* Alinha os itens de navegação verticalmente e ajusta o tamanho da fonte */
     .nav {
-        flex-direction: column; /* Alinha os itens da navegação verticalmente */
-        font-size: 18px; /* Ajusta o tamanho da fonte da navegação */
+        flex-direction: column;
+        font-size: 18px;
         gap: 15px;
     }
 
+    /* Ajusta a altura da linha de destaque nos links de navegação */
     .nav > li > a::before {
-        height: 2px; /* Ajusta a altura da linha de destaque */
+        height: 2px;
     }
 
+    /* Ajusta o preenchimento do formulário de contato */
     form {
-        padding: 30px; /* Ajusta o preenchimento do formulário */
+        padding: 30px;
     }
 
+    /* Ajusta o tamanho da fonte dos campos de entrada e texto do formulário */
     form input, form textarea {
-        font-size: 16px; /* Ajusta o tamanho da fonte dos campos do formulário */
+        font-size: 16px;
     }
 
+    /* Ajusta o tamanho da fonte do botão no formulário */
     form button {
-        font-size: 16px; /* Ajusta o tamanho da fonte do botão */
+        font-size: 16px;
     }
 }
 
+/* Faz com que a imagem se ajuste ao tamanho do contêiner nas seções "Quem sou eu?" e "Projetos" */
 .quemsoueu img, .projetos-imagem {
-    width: 100%; /* Faz com que a imagem se ajuste ao tamanho do contêiner */
+    width: 100%;
     height: auto;
 }
 
 /* Define o estilo básico para todo o site */
-
 body {
     font-family: Arial, sans-serif;
     font-size: 18px;
     margin: 0;
-    color: #ffffff; /* Cor do texto em branco */
-    background-color: #12161f; /* Cor de fundo preta */
-
+    color: #ffffff; /* Define a cor do texto como branco */
+    background: linear-gradient(to right, #121213, #042968); /* Aplica um gradiente de fundo */
 }
 
+/* Estilo para os cabeçalhos (h2) */
 h2 {
     text-align: center;
-    color: #ffffff; /* Cor do texto do cabeçalho */
+    color: #ffffff;
     font-size: 45px;
 }
 
-  
+/* Remove a marcação padrão de listas */
 ul {
     list-style: none;
 }
-  
+
+/* Define o estilo para a barra de navegação */
 nav {
-    color: #ffffff; 
+    color: #ffffff;
     background-color: #1a2027;
-    border-radius: 10px; 
+    border-radius: 10px;
     margin: 10px auto;
-    width: fit-content; 
+    width: fit-content;
     padding: 10px 20px;
     opacity: 60%;
-    transition-duration: 0.7s;
+    transition-duration: 0.7s; /* Transição suave para efeitos */
 }
-  
-  
+
+/* Define o layout e estilo dos itens de navegação */
 .nav {
     margin: 0;
     padding: 0;
@@ -120,25 +135,23 @@ nav {
     align-items: stretch;
     height: 70px;
     font-size: 25px;
-    font-weight: bold; 
+    font-weight: bold;
     gap: 30px;
-
 }
 
-
+/* Estilo para links de navegação ao passar o mouse */
 .nav > li:hover > a {
     color: #3e95ff;
     text-decoration: none;
 }
 
-  
+/* Estilo para a linha de destaque dos links de navegação ao passar o mouse */
 .nav > li:hover > a::before {
-        visibility: visible;
-        scale: 1 1;
-
+    visibility: visible;
+    scale: 1 1;
 }
-  
 
+/* Estilo básico dos links de navegação */
 .nav > li a {
     color: #ffffff;
     display: flex;
@@ -149,7 +162,8 @@ nav {
     position: relative;
     height: 100%;
 }
-  
+
+/* Estilo da linha de destaque dos links de navegação */
 .nav > li > a::before {
     content: "";
     position: absolute;
@@ -161,97 +175,63 @@ nav {
     transition: all 0.2s ease-in-out;
     scale: 0 0;
     visibility: hidden;
-    
 }
 
-
-
-/* Estilo do nav de navegação */
-/* nav {
-    background-color: #003366; 
-    padding: 20px;
-    text-align: center;
-    transition-duration: 0.7s;
-    border-bottom: 3px solid rgb(255, 255, 255);
-}
-
-nav a {
-    color: #fff; 
-    margin: 0 15px;
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgb(0, 0, 0);
-    font-weight: bold; 
-    } */
-
-/* ------------------------------------------------------------------- */
-
-/* Estilo da página "Quem sou eu?" */
-
+/* Estilo da seção "Quem sou eu?" */
 .quemsoueu {
     padding: 15px;
     margin: 5%;
-}
-
-.quemsoueu {
-    display: flex; /* Usar flexbox para layout */
-    align-items: center; /* Alinha itens verticalmente ao centro */
-    gap: 20px; /* Espaçamento entre a imagem e o texto */
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .quemsoueu img {
     border-radius: 50%; /* Deixa a imagem circular */
-    max-width: 400px; /* Define um tamanho máximo para a imagem */
-    height: auto; /* Mantém a proporção da imagem */
+    max-width: 400px;
+    height: auto;
 }
 
 .quemsoueu p {
-    max-width: auto; /* Define uma largura máxima para o texto */
-    text-align: left; /* Ajusta o texto a esquerda da imagem */
-    font-size: 40px; /* Ajusta o tamanho do texto */
-    font-weight: bold; /* Fonte em negrito */
+    max-width: auto;
+    text-align: left;
+    font-size: 40px;
+    font-weight: bold;
 }
-/* ------------------------------------------------------------------------------- */
-/* Estilo da página "Formação" */
+
+/* Estilo da seção "Formação" */
 .formacao {
-    max-width: auto; /* Define uma largura máxima para o texto */
-    text-align: center; /* Ajusta o texto a esquerda da imagem */
-    font-size: 20px; /* Ajusta o tamanho do texto */
-
+    max-width: auto;
+    text-align: center;
+    font-size: 20px;
 }
 
-/* Estilo da lista */
-ul{
-    text-align: center; /* Ajusta o texto a esquerda da imagem */ 
-    margin-bottom: 10px; /* Espaço entre itens da lista */
+/* Estilo básico para listas */
+ul {
+    text-align: center;
+    margin-bottom: 10px;
     background-color: #1a2027;
-    border-radius: 3px; 
+    border-radius: 3px;
     margin: 10px auto;
-    width: fit-content; 
+    width: fit-content;
     padding: 10px 20px;
-
 }
 
+/* Estilo para links em listas */
 ul li a {
-    color: rgb(42, 104, 240); /* Cor do link */
-    text-decoration: none; /* Remove o sublinhado */
-    
+    color: rgb(42, 104, 240);
+    text-decoration: none;
 }
 
 ul li a:hover {
-    color: rgb(42, 104, 240); /* Cor do link ao passar o mouse */
-    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+    text-decoration: underline;
 }
-
-
 
 /* Estilo para o formulário de contato */
 form {
     margin: 5%;
     align-items: center;
-    background-color: #1a2027; /* Azul escuro */
+    background-color: #1a2027;
     padding: 50px;
     border-radius: 5px;
 }
@@ -265,27 +245,26 @@ form input, form textarea {
 }
 
 form button {
-    background-color: #ffffff; /* Azul mais claro */
-    color: #12161f; /* Cor do texto do botão */
+    background-color: #ffffff;
+    color: #12161f;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-weight: bold; /* Fonte em negrito */
+    font-weight: bold;
 }
 
 form button:hover {
-    background-color: #12161f; /* Azul ainda mais escuro no hover */
+    background-color: #12161f;
     color: #ffffff;
 }
 
-/* ------------------------------------------------------------------------------- */
-
+/* Estilo para a página de portfólio */
 .portfolio-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
-    max-width: 12000px; 
+    justify-content: center;
+    max-width: 12000px;
     margin: 50px;
 }
 
@@ -297,10 +276,7 @@ form button:hover {
     margin-bottom: 20px;
     max-width: 70%;
     padding: 15px;
-
-
 }
-
 
 .projetos-imagem {
     border-radius: 8px;
@@ -320,26 +296,26 @@ form button:hover {
     margin: 10px 0;
 }
 
-
+/* Estilo para logos de tecnologias no portfólio */
 .tech-logos {
     display: flex;
-    justify-content: center; /* Alinha os itens horizontalmente no centro */
-    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: center;
+    align-items: center;
 }
 
 .tech-logos img {
     height: 30px;
     margin-right: 10px;
-
 }
 
+/* Estilo para links de projetos no portfólio */
 .projeto-links {
     margin-top: 20px;
     text-align: center;
 }
 
 .projeto-links a {
-    background-color: #ffffff; 
+    background-color: #ffffff;
     color: #12161f;
     border-radius: 3px;
     margin-right: 10px;
@@ -348,6 +324,6 @@ form button:hover {
 }
 
 .projeto-links a:hover {
-    background-color: #12161f; 
+    background-color: #12161f;
     color: #ffffff;
 }
